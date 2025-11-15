@@ -1,29 +1,32 @@
 # Student-Performance-Data-Cleaning-Analysis-Using-Python
-This project focuses on cleaning and analyzing a small student performance dataset using Python. The goal is to fix inconsistent data formats, handle missing values, correct date formats, standardize text fields, and prepare the dataset for further analysis or visualization.
+This project focuses on cleaning and standardizing a messy student performance dataset containing demographic details, exam scores, enrollment dates, and remarks.  
+The original file had multiple real-world data issues: missing values, inconsistent date formats, incorrect categories, mixed casing and duplicated entries.  
+The goal was to transform this raw dataset into a reliable, analysis-ready format using Python and Pandas.
 
 # Dataset & Tools Used
 
-Dataset
+### Dataset
+The project uses students_data.csv, which includes:
+- Student IDs  
+- Names  
+- Age and gender  
+- Subject-wise scores  
+- Enrollment dates  
+- Remarks / performance feedback  
 
-A students_data.csv file containing:
+Common data problems present in the file:
+- Missing numeric and text values  
+- “missing” strings instead of NaN  
+- Mixed date formats (YYYY-MM-DD, DD-MM-YYYY, MM/DD/YYYY)  
+- Duplicated rows  
+- Inconsistent gender, grade and remarks values  
+- Irregular text casing  
 
-Student demographic details
-
-Subject wise scores
-
-Enrollment dates
-
-Remarks
-
-The dataset includes issues (duplicates, mixed date formats, inconsistent casing, missing values) to simulate real world data cleaning.
-
-Tools & Libraries
-
-Python
-
-Pandas
-
-Jupyter Notebook
+### Tools & Libraries
+- *Python 3*
+- *Pandas*
+- *NumPy*
+- *Jupyter Notebook*
 
 # Workflow
 
