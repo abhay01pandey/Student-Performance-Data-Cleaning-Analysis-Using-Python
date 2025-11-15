@@ -30,36 +30,36 @@ Common data problems present in the file:
 
 # Workflow
 
-Data Loading
+### 1. Data Loading
+- Loaded the CSV file into a Pandas DataFrame.
 
-Loaded the CSV file into a Pandas DataFrame
+### 2. Data Cleaning
+- Replaced “missing” strings with NaN.
+- Converted english_score from object → numeric.
+- Filled missing numeric values using mean imputation.
+- Standardized text fields:
+  - Lowercased + title-cased names
+  - Normalized gender values (Male/Female)
+  - Cleaned remarks/categories
+- Fixed inconsistent grade formats (10 / 10th / 11th → standardized).
+- Unified all date formats and converted to datetime.
+- Removed duplicated records.
+- Ensured all columns have correct datatypes.
+  
+ ### 3. Output
+- Produced a fully cleaned dataset ready for EDA or further modeling.
 
-Data Cleaning
-
-Removed duplicate entries
-
-Handled missing numeric values using mean imputation
-
-Standardized text fields (names, gender, remarks)
-
-Cleaned inconsistent category values (remarks, grades)
-
-Converted english_score from object → numeric and rounded values
-
-Normalized all date formats and converted to datetime
-
-Ensured consistent datatypes across columns
 
 # Results
 
-After processing:
-
-All categorical fields are standardized
-
-Date formats are unified
-
-Missing and inconsistent values corrected logically
-
-Numeric scores properly typed and cleaned
-
-The dataset is now fully ready for EDA, reporting, downstream analysis.
+After preprocessing:
+- All text fields are standardized and consistent.
+- Dates follow a single uniform format.
+- Missing values are handled logically.
+- Numeric fields are properly typed and cleaned.
+- Duplicates are removed.
+- The final dataset is stable, readable and ready for:
+  - Data visualization  
+  - KPI reporting  
+  - Exploratory data analysis  
+  - Machine learning pipelines  
