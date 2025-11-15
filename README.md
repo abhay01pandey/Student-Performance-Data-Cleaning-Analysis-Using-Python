@@ -15,7 +15,7 @@ Enrollment dates
 
 Remarks
 
-The dataset includes intentional issues (duplicates, mixed date formats, inconsistent casing, missing values) to simulate real-world data cleaning.
+The dataset includes issues (duplicates, mixed date formats, inconsistent casing, missing values) to simulate real world data cleaning.
 
 Tools & Libraries
 
@@ -59,6 +59,4 @@ Missing and inconsistent values corrected logically
 
 Numeric scores properly typed and cleaned
 
-The dataset is now fully ready for EDA, reporting, or downstream analysis.
-
-This project demonstrates essential data preprocessing — a core skill for any data analyst.
+The dataset is now fully ready for EDA, reporting, downstream analysis.
